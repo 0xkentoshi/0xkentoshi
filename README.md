@@ -41,7 +41,7 @@ Local LLM reasoning is combined with deterministic safety controls so AI decisio
 - Immunity List for trusted accounts
 - Automatic Safety Circuit Breaker
 - Time-aware reputation decay
-- **255 automated regression tests**
+- **253 automated regression tests**
 
 **Stack:** Python · aiogram · Ollama · Qwen · SQLite · embeddings
 
