@@ -1,205 +1,175 @@
 <div align="center">
 
-# Hi, I'm Kentoshi
+# Kentoshi
 
 ### AI Automation Engineer · AI Agents · Workflow Automation
 
-I build practical AI agents that turn unstructured requests into **real, controlled actions**.
+I build AI systems that turn unstructured requests into **controlled real-world actions**.
 
-`Python` · `Ollama` · `Local LLMs` · `Telegram` · `SQL` · `n8n`
+`Python` · `Ollama` · `Local LLMs` · `Telegram` · `SQL` · `Excel` · `SQLite` · `n8n`
+
+[![GitHub](https://img.shields.io/badge/GitHub-0xkentoshi-181717?logo=github)](https://github.com/0xkentoshi)
+[![X](https://img.shields.io/badge/X-@_kentoshi-000000?logo=x)](https://x.com/_kentoshi)
+[![Links](https://img.shields.io/badge/Links-linktr.ee/0xkentoshi-43E55E?logo=linktree&logoColor=white)](https://linktr.ee/0xkentoshi)
 
 </div>
 
 ---
 
-## About Me
+## Featured Projects
 
-I'm focused on building AI-powered automation systems for real operational tasks:
+<table>
+<tr>
+<td width="50%" valign="top">
 
-- AI agents that understand natural-language requests
-- workflow and business-process automation
-- human-in-the-loop systems
-- local LLM applications
-- Telegram automation
-- data operations with SQL, Excel and structured datasets
-- safe execution of AI-generated decisions
+### 🛡️ ModGuard
 
-My preferred architecture is:
+**Context-aware AI moderation agent for Telegram communities.**
 
-> **LLM reasoning → structured decision → deterministic execution**
+Local LLM reasoning is combined with deterministic safety controls so AI decisions can drive real moderation actions without giving the model unrestricted execution authority.
 
-I am especially interested in systems where AI does more than generate text — it **analyzes context, makes a structured decision and safely performs an action**.
+**Current public release:** `v1.2.0`
+
+**Highlights**
+- Fast → Deep local LLM routing
+- Warn / Delete / Mute / Ban / Unban
+- Human Review for ambiguous conflicts
+- Natural-language Community Policy
+- Shadow Mode and Test Mode
+- Semantic campaign detection and Raid Guard
+- Fake Admin / Moderator protection
+- Immunity List for trusted accounts
+- Automatic Safety Circuit Breaker
+- Time-aware reputation decay
+- **255 automated regression tests**
+
+**Stack:** Python · aiogram · Ollama · Qwen · SQLite · embeddings
+
+[**Repository →**](https://github.com/0xkentoshi/modguard) · [**Releases →**](https://github.com/0xkentoshi/modguard/releases)
+
+</td>
+<td width="50%" valign="top">
+
+### 📊 DataOps Commander
+
+**AI data-operations agent for Excel and SQLite workflows.**
+
+Natural-language requests are converted into structured plans, validated against real schemas, previewed before writes, then executed with snapshots, verification and guarded undo.
+
+**Current public release:** `v1.0.1`
+
+**Highlights**
+- Natural-language Excel / SQLite operations
+- Schema-aware AI planning
+- Compound multi-step tasks
+- Preview before destructive writes
+- Explicit human confirmation
+- Snapshots and guarded undo
+- Transactional SQLite execution
+- Source-change protection
+- Verification and audit history
+- Remote Telegram control
+- **50 automated regression tests**
+
+**Stack:** Python · Ollama · Pydantic · Excel · SQLite · Telegram
+
+[**Repository →**](https://github.com/0xkentoshi/dataops-commander) · [**Releases →**](https://github.com/0xkentoshi/dataops-commander/releases)
+
+</td>
+</tr>
+</table>
 
 ---
 
-# Featured Project
+## Engineering Approach
 
-## 🛡️ ModGuard — Autonomous AI Moderation Agent
-
-**Local-first AI moderation system for Telegram communities.**
-
-ModGuard analyzes messages using local LLMs, executes real moderation actions and escalates ambiguous situations to a human moderator instead of blindly making destructive decisions.
-
-### Core capabilities
-
-- Fast → Deep AI routing
-- scam and phishing detection
-- spam / flood moderation
-- contextual harassment analysis
-- real `Warn / Delete / Mute / Ban / Unban` actions
-- human-review tickets with conversation context
-- natural-language Community Policy
-- Shadow Mode for safe evaluation
-- semantic campaign detection
-- Raid Guard
-- moderator feedback memory
-- per-community settings isolation
-- ban search and management
-- system diagnostics
-- safe Test Mode
-- **200+ automated regression tests**
-
-### AI stack
-
-`qwen3:1.7b` — fast semantic triage  
-`qwen3:8b` — deep moderation reasoning  
-`qwen3-embedding:0.6b` — semantic embeddings  
-`Ollama` — local inference
-
-### Engineering principle
+The common architecture behind my projects is:
 
 ```text
-Telegram message
-      ↓
-Context Builder
-      ↓
-Fast AI
-      ↓
-Deep AI
-      ↓
-Structured Decision
-      ↓
-Deterministic PolicyGate
-      ↓
-Controlled Action
+Unstructured request / event
+            ↓
+       LLM reasoning
+            ↓
+    Structured decision
+            ↓
+ Deterministic validation
+            ↓
+ Human approval where needed
+            ↓
+    Controlled execution
+            ↓
+ Verification / audit / recovery
 ```
 
-**Version:** `v1.0.0`
+I am especially interested in the boundary between **probabilistic AI reasoning** and **reliable software execution**.
 
-[**→ View ModGuard repository**](https://github.com/0xkentoshi/modguard)
+That means focusing on:
 
----
-
-# Other Work
-
-## 📊 DataOps Commander
-
-AI agent for remotely working with structured data through natural-language instructions.
-
-The agent is designed to understand requests such as data cleanup, transformations and multi-step operations, then safely execute them against Excel / CSV / SQL data.
-
-### Key ideas
-
-- natural-language data operations
-- multi-step task execution
-- Excel / CSV / SQL workflows
-- human confirmation before destructive changes
-- snapshots and rollback
-- operation history
-- remote Telegram control
-
-**Stack:** `Python · Ollama · SQL · Excel · SQLite · Telegram`
-
-Portfolio repository preparation is in progress.
+- structured LLM outputs instead of free-form execution
+- deterministic safety gates around destructive actions
+- human-in-the-loop workflows for ambiguous decisions
+- rollback, snapshots and recovery paths
+- local LLM inference where privacy or control matters
+- regression tests for failures discovered during real QA
+- automation that removes actual operational work
 
 ---
 
-# Tech Stack
+## What I Build
 
-### AI & Agents
-
-![Ollama](https://img.shields.io/badge/Ollama-Local_LLMs-black)
-![Qwen](https://img.shields.io/badge/Qwen-LLM-6C5CE7)
-![AI Agents](https://img.shields.io/badge/AI-Agents-111111)
-![Prompt Engineering](https://img.shields.io/badge/Prompt-Engineering-444444)
-
-### Backend & Automation
-
-![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-Data-4479A1)
-![Telegram](https://img.shields.io/badge/Telegram-Bot_API-26A5E4?logo=telegram&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-Automation-EA4B71?logo=n8n&logoColor=white)
-
-### Data & Storage
-
-![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-Automation-217346?logo=microsoftexcel&logoColor=white)
-![Google Sheets](https://img.shields.io/badge/Google_Sheets-Automation-34A853?logo=googlesheets&logoColor=white)
-
-### Engineering
-
-`asyncio` · `aiogram` · `Pydantic` · `SQLAlchemy` · `Git` · `GitHub` · `pytest` · `REST APIs`
+- **AI agents** that understand natural-language tasks and perform controlled actions
+- **Workflow automation** for repetitive operational processes
+- **Data automation** around Excel, SQL and structured datasets
+- **Internal tools** with human approval and auditability
+- **Telegram automation** and remote-control interfaces
+- **Local-LLM applications** using Ollama
+- **Safety-first agent systems** with validation, fallbacks and recovery
 
 ---
 
-# What I Care About
+## Tech Stack
 
-I try to build AI systems around a few practical principles:
+**AI / Agents**  
+`Ollama` · `Qwen` · `Local LLMs` · `Structured Outputs` · `Embeddings`
 
-### 1. AI should perform useful work
+**Backend / Automation**  
+`Python` · `asyncio` · `aiogram` · `Pydantic` · `REST APIs` · `n8n`
 
-Not just answer questions — execute controlled actions.
+**Data**  
+`SQL` · `SQLite` · `Excel` · `Google Sheets`
 
-### 2. Probabilistic AI needs deterministic boundaries
-
-LLMs can reason, but critical actions should pass explicit validation and policy layers.
-
-### 3. Humans should stay in the loop where ambiguity matters
-
-Confident machine decisions can be automated. Gray areas should be escalated.
-
-### 4. Failures should become regression tests
-
-If a real QA scenario breaks the system, it should be covered before the same bug can return.
-
-### 5. Automation should reduce operational work
-
-The end result should save someone time or remove repetitive manual actions.
+**Engineering**  
+`Git` · `GitHub` · `pytest` · `unittest` · `Human-in-the-loop` · `Audit / rollback patterns`
 
 ---
 
-# Current Focus
+## Current Focus
 
-Building a portfolio of practical AI automation systems across different domains.
+I am currently focused on:
 
-### Completed
-
-- 🛡️ **ModGuard v1.0.0** — AI moderation agent
-
-### Next
-
-- 📊 **DataOps Commander** — AI data operations agent
-- additional automation agents across different business workflows
+- taking **ModGuard** through real-community pilot testing
+- improving deployment and operational reliability for AI agents
+- building production-oriented automation around real business workflows
 
 ---
 
-# Open To
+## Open To
 
-I'm currently interested in opportunities involving:
+I am interested in:
 
-- AI Agents
-- AI Automation
-- Python Automation
-- Workflow Automation
-- LLM Applications
-- Internal Tools
-- Telegram Automation
-- Junior / Trainee AI Engineering roles
+- AI Automation Engineer roles
+- AI Agent Engineer roles
+- Python Automation roles
+- Workflow / Business Process Automation
+- LLM application development
+- Internal automation tools
+- Project and contract work
 
 ---
 
-# Contact
+## Contact
 
-GitHub: **[@0xkentoshi](https://github.com/0xkentoshi)**
+- GitHub: [@0xkentoshi](https://github.com/0xkentoshi)
+- X: [@_kentoshi](https://x.com/_kentoshi)
+- Links: [linktr.ee/0xkentoshi](https://linktr.ee/0xkentoshi)
 
-Open to project work, internships and junior opportunities in AI automation.
